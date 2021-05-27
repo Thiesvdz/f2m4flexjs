@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Mijn pagina</h1>
+
+    <p class="achtergrond">Maak achtergrond blauw</p>
+    <p class="achtergrond">Maak achtergrond rood</p>
+    <p class="achtergrond">Maak achtergrond oranje</p>
+    <p class="voorgrond">Maak voorgrond zwart</p>
+    <p class="voorgrond">Maak voorgrond geel</p>
+    <p class="voorgrond">Maak voorgrond wit</p>
+
+    <script>
+    
+        let achtergronden = document.getElementsByClassName('achtergrond');
+        let voorgronden = document.getElementsByClassName('voorgrond');
+        let achtergrondkleuren = ["blue","red","orange"];
+        let voorgrondkleuren = ["black","yellow","white"];
+        let voorgrondkleurentext = ["white","black","black"];
+        
+        for(let i = 0; i < achtergronden.length; i++){
+            achtergronden[i].addEventListener('click', function(){
+                setAchtergrond(i);
+            });
+        }
+        function setAchtergrond(i){
+            // console.log(i);
+            document.body.style.background = achtergrondkleuren[i]
+        }
+
+        for(let z = 0; z < voorgronden.length; z++){
+            voorgronden[z].addEventListener('click', function(){
+                setVoorgrond(z);
+            });
+        }
+        function setVoorgrond(z){
+            // console.log(z);
+            document.body.style.background = voorgrondkleuren[z]
+            document.body.style.color = voorgrondkleurentext[z]
+        }
+
+    </script>
+</body>
+</html>
