@@ -6,24 +6,25 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Les 3</title>
 </head>
+
 <body> 
     <script>
 
-    for(let i=0; i<8;i++){
-        let element = document.createElement('p');
+    for(let i=0; i<1000;i++){
+        let element = document.createElement('span');
         let style = element.style;
 
-        element.innerHTML = "Element";
+        element.innerHTML = "";
         style.background  = "red";
         style.color  = "white";
-        style.margin = "auto";
-        style.width  = "120px";
+        style.margin = "1px";
+        style.width  = "20px";
+        style.padding = "30px"
         style.border = "2px black solid";
 
         document.body.appendChild(element);
 
-        document.addEventListener('click',(e)=>{
-            console.log(e)
+        element.addEventListener('click',(e)=>{
             let style2 = e.target.style
 
             if (style2.background == "red") {
