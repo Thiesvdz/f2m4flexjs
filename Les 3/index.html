@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Les 3</title>
+</head>
+<body> 
+    <script>
+
+    for(let i=0; i<8;i++){
+        let element = document.createElement('p');
+        let style = element.style;
+
+        element.innerHTML = "Element";
+        style.background  = "red";
+        style.color  = "white";
+        style.margin = "auto";
+        style.width  = "120px";
+        style.border = "2px black solid";
+
+        document.body.appendChild(element);
+
+        document.addEventListener('click',(e)=>{
+            console.log(e)
+            let style2 = e.target.style
+
+            if (style2.background == "red") {
+                style2.background =  "green";
+            }
+            else{
+                style2.background =  "red";
+            }    
+        });
+    }
+
+        
+    </script>
+</body>
+</html>
