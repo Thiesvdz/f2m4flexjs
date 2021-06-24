@@ -1,0 +1,58 @@
+body{
+    background: linear-gradient(to bottom right, rgb(43, 9, 233), rgb(15, 219, 49)) fixed;
+    font-family: "Poppins", sans-serif;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    background-color: rgb(255, 255, 255);
+    padding: 2em;
+    width: 30em;
+    border: rgb(82, 79, 255) 5px inset;
+    margin: auto;
+    margin-top: 20%;
+    border-radius: 10px;
+}
+
+#opgaveblad, #antwoordenblad{
+    display: flex;
+    justify-content: center;
+    padding: 0.8em;
+    font-weight: bolder;
+    font-size: large;
+    /* background-color: gold; */
+}
+
+#input1{
+    margin-right: 10px;
+}
+
+#execButton{
+    background-color: #00eeff;
+    border: 2px solid black;
+    color: rgb(88, 88, 88);
+    padding: 8px 12px;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.9;
+    border-radius: 12px;
+    box-shadow: 0 6px rgb(54, 54, 54);
+}
+
+#execButton:hover{
+    opacity: 1;
+    color: black;
+}
+
+#execButton:active{
+    box-shadow: 0 3px rgb(0, 0, 0);
+    transform: translateY(4px);
+} 
+
+#uitleg, #uitleg2{
+    text-align: center;
+}
